@@ -1,0 +1,83 @@
+.container{
+    margin: auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin-top: 10%;
+}
+
+textarea {
+    min-width: 50rem; /* Minimum width of the textarea */
+    min-height: 24rem; /* Minimum height of the textarea */
+    font-size: 1.5rem; /* Font size of the text inside the textarea */
+    color: #fff; /* Text color (white) */
+    background: rgba(255, 255, 255, 0.267); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+textarea:active{
+    border: none;
+}
+body{
+    background: linear-gradient(to right, #0b004d, #5e158f);
+    font-family: verdana;
+    font-size: 1.85rem;
+}
+
+h1{
+    color:white
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.9); /* Placeholder text color (light gray) */
+}
+textarea:focus{
+    outline: none;
+}
+.highlight {
+    position: relative; /* Ensure relative positioning */
+    color: red; /* Change the color of the highlighted word */
+
+}
+
+.highlight::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position relative to .highlight */
+    left: 0; 
+    bottom: -0.3rem;
+    width: 100%; 
+    height: 0.3rem; 
+    background-color: white; /* Color of the underline */
+}
+
+select{
+    font-size: 1.5rem;
+    width: 40rem;
+    padding: 5px;
+    border-radius: 20px;
+    color: #fff; /* Text color (white) */
+    background: rgba(255, 255, 255, 0.267); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+select option {
+    background-color: rgba(255, 255, 255, 0.267);  /* Background color of options */
+    color: #333; /* Text color of options */
+}
+
+button{
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+}
